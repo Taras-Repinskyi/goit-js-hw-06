@@ -7,8 +7,8 @@ const refs = {
 
 function onInputChange(event) {
   refs.span.textContent = event.currentTarget.value;
-        if (refs.input.length === 0) {
-        refs.span.textContent = "Anonymous";
+      if (event.target.value === '') {
+        refs.span.textContent = 'Anonymous';
   };
   
 };
